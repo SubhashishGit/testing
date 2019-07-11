@@ -1,0 +1,22 @@
+mkdir noor_repo
+cd noor_repo/	
+git init
+vi Readme
+git status -s
+git add .
+git status -s
+git commit -m 'Initial commit'
+git log
+
+git pull https://github.com/UNoorul/DevOps master
+git status 
+git push  <REMOTENAME> <BRANCHNAME> 
+git push --set-upstream https://github.com/UNoorul/DevOps master
+
+git remote –v
+git remote add pb https://github.com/UNoorul/DevOps
+git remote rename prog1 payroll
+git remote
+git remote remove payroll
+git remote
+
