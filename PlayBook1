@@ -1,4 +1,3 @@
-Testing add.. 
  Example setting host facts using key=value pairs, note that this always creates strings or booleans
 - set_fact: one_fact="something" other_fact="{{ local_var }}"
 # My Comment 
@@ -9,6 +8,7 @@ Testing add..
      other_fact: "{{ local_var * 2 }}"
      another_fact: "{{ some_registered_var.results | map(attribute='ansible_facts.some_fact') | list }}"
 
+# 
 # Example setting facts so that they will be persisted in the fact cache
 - set_fact:
     one_fact: something
